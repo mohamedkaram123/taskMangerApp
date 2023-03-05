@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Button } from 'react-bootstrap';
 
-const NotFoundData = ({ message, onRefresh=false }) => {
+const NotFoundData = ({ message}) => {
   return (
     <div className={`flex flex-col items-center justify-center my-20 h-full space-y-6`}>
      
@@ -10,9 +10,9 @@ const NotFoundData = ({ message, onRefresh=false }) => {
 
       <p className={`text-gray-500 text-100 text-3xl`}>{message}</p>
       
-      {onRefresh?<Button onClick={onRefresh} className="text-indigo-600" >
+      {/* onRefresh?<Button onClick={onRefresh} className="text-indigo-600" >
         Refresh
-      </Button>:null}
+  </Button>:null*/}
     </div>
   );
 };

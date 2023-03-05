@@ -54,7 +54,7 @@ const [itemData, setitemData] = useState()
             {loading?
                   <Loader />:
               <div className='ml-10 mr-10 d-flex flex-md-row flex-column justify-content-center row'>
-                {employeesMangers.length > 0? employeesMangers.map((item,i)=><div key={i}  className='col-md-4 col-12 '> <EmployeeCard key={i} open_addcard={open_addcard} showEyee={showEyee}  item={item} /> </div>):<NotFoundData onRefresh={handleSave} message={'Not Found Data'} />}
+                {employeesMangers.length > 0? employeesMangers.map((item,i)=><div key={i}  className='col-md-4 col-12 '> <EmployeeCard key={i} open_addcard={open_addcard} showEyee={showEyee}  item={item} /> </div>):<NotFoundData message={'Not Found Data'} />}
             </div>}
             {showTasksEmployee?<TaskEmployeeModel show={showTasksEmployee} items={EmployeeTasks} handleClose={()=>setshowTasksEmployee(false)} />:null}
             {showAddTask?<AddModal id={employee_id} show={showAddTask} handleClose={()=>setshowAddTask(false)} handleSave={handleSave} />:null}

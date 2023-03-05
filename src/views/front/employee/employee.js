@@ -49,7 +49,7 @@ export default function Employee() {
                 <p className="font-bold">Note:</p>
                 <p>Status and Description can be changed when double click the status and description.</p>
             </div>
-                {tasks.length > 0? tasks.map((item,i)=><TaskCard key={i} refreshComponent={refreshComponent} item={item} />):<NotFoundData onRefresh={refreshComponent} message={'Not Found Data'} />}
+                {tasks.length > 0? tasks.map((item,i)=><TaskCard key={i} refreshComponent={refreshComponent} item={item} />):<NotFoundData message={'Not Found Data'} />}
             </div>
         )
       }
